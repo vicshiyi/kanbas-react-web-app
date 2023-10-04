@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+    </head>
+
+    
+    <body>
+        <table>
+            <tr>
+                <td valign="top">
+                    <ul>
+                        <li><a href="/kanbas/profile/index.html">Account</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="/kanbas/home.html">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td valign="top">
+                    <ul>
+                        <li><a href="/kanbas/home.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/kanbas/grade/index.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="/kanbas/settings/index.html">Settings</a></li>
+                    </ul>
+                </td>
+                <td valign="top">
+                    <button onclick="window.location.href='/kanbas/settings/index.html'">Course Details</button>
+                    <button>Sections</button>
+                    <button onclick="window.location.href='/kanbas/settings/navigation.html'">Navigation</button>
+                    <button>Apps</button>
+                    <button>Feature Options</button>
+                    <button>Integrations</button>
+
+                    <h2>Course Details</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Image:</td>
+                                <td><input type="file" id="settings-image" name="settings-cd-image" accept="image/*"></td>
+                            </tr>
+                            <tr>
+                                <td>Name:</td>
+                                <td><input type="text" id="settings-name" name="settings-cd-name" value="CS5610 11550 Web Development SEC 01 Fall 2023 [VTL-2-OL]" /></td>
+                            </tr>
+                            <tr>
+                                <td>Course Code:</td>
+                                <td><input type="text" id="settings-code" name="settings-cd-code" value="CS5610.11550.202410" /></td>
+                            </tr>
+                            <tr>
+                                <td>Blueprint Course:</td>
+                                <td>
+                                    <select id="settings-blueprint">
+                                        <option selected value="NO">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Course Template:</td>
+                                <td>
+                                    <input type="checkbox" value="ENABLE" name="settings-cd-template" id="settings-template"/> 
+                                    <label for="settings-cd-template">Enable course as a Course Template</label> <br/> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Time Zone:</td>
+                                <td>
+                                    <select id="settings-time">
+                                        <option selected value="EASTERN">Eastern Time(US & Canada)(-05:00/-04:00)</option>
+                                        <option value="EASTERN">Pacific Time(US & Canada)(-02:00/-01:00)</option>
+                                        <option value="EASTERN">Greenwich Time(UK)(0:00)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SIS ID:</td>
+                                <td><input type="text" id="settings-sis" name="settings-cd-sis" value="CS5610.11550.202410" /></td>
+                            </tr>
+                            <tr>
+                                <td>Subaccount:</td>
+                                <td><a href="#">CS Undergrad</a></td>
+                            </tr>
+                            <tr>
+                                <td>Term:</td>
+                                <td><input type="text" id="settings-term" name="settings-cd-term" value="202410_1 Fall 2023 Semester Full Term" /></td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">Paticipation:</td>
+                                <td>
+                                    <select id="settings-paticipation">
+                                        <option selected value="TERM">Term</option>
+                                        <option value="NONE">None</option>
+                                        <option value="WEEK">Week</option>
+                                    </select><br/>
+                                    Course Paticipation is limited to <b>term</b> start and end dates.
+                                    <br/><br/>
+                                    <label for="settings-cd-start">Start</label><br/>
+                                    <input type="date" id="settings-start" value="2023-01-01"/>
+                                    <br/><br/>     
+                                    <label for="settings-cd-end">End</label><br/>
+                                    <input type="date" id="settings-end" value="2023-01-01"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">Restriction:</td>
+                                <td>
+                                    <input type="checkbox" value="BEFORE" name="settings-cd-restriction" id="settings-restriction-before"/> 
+                                    <label for="settings-cd-restriction">Restrict students from viewing course before term start date</label> <br/>
+                                    <input type="checkbox" value="AFTER" name="settings-cd-restriction" id="settings-restriction-after"/> 
+                                    <label for="settings-cd-restriction">Restrict students from viewing course after term start date</label> <br/> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">Default due time:</td>
+                                <td>
+                                    <select id="settings-due">
+                                        <option selected value="DEFAULTPM">Account default(11:59pm)</option>
+                                        <option value="DEFAULTAM">Account default(9:00am)</option>
+                                    </select>
+                                    <br/>
+                                    This influences the user interface for setting due dates. It dose not change the time due for any existing assignments.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">Language:</td>
+                                <td>
+                                    <select id="settings-language">
+                                        <option selected value="EN">Not set(user-configurable, defaults to English (United State))</option>
+                                        <option value="CHN">Chinese</option>
+                                        <option value="SPA">Spanish</option>
+                                    </select>
+                                    <br/>
+                                    This will override any user/system language preferences. This is only recommended for foreign language courses.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>File Storage:</td>
+                                <td><input type="number" id="settings-storage" value="10000"/> megabytes</td>
+                            </tr>
+                            <tr>
+                                <td>Large Course:</td>
+                                <td>
+                                    <input type="checkbox" value="SPEEDGRADER" name="settings-cd-speedgrader" id="settings-speedgrader"/> 
+                                    <label for="settings-cd-speedgrader">Launch SpeedGrader Filtered by Student Group</label> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Grading Scheme:</td>
+                                <td>
+                                    <input type="checkbox" value="GRADING" name="settings-cd-grading" id="settings-grading"/> 
+                                    <label for="settings-cd-grading">Enable course grading scheme</label> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>License:</td>
+                                <td>
+                                    <select id="settings-license">
+                                        <option selected value="PRIVATE">Private(Copyrighted)</option>
+                                        <option value="PUBLIC">Public</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Grading Scheme:</td>
+                                <td>
+                                    <input type="checkbox" value="COPYRIGHT" name="settings-cd-copyright" id="settings-copyright"/> 
+                                    <label for="settings-cd-copyright">Copyright and license information must be provided for files before they are published</label> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">Visibility:</td>
+                                <td>
+                                    If you need to make your course public please contact your ad ministrator/support.<br/> 
+                                    <select id="settings-select-visibility">
+                                        <option selected value="COURSE">Course</option>
+                                        <option value="OTHER">Other</option>
+                                    </select><br/>
+                                    <input type="checkbox" value="VISIBILITY" name="settings-cd-visibility" id="settings-visibility"/>
+                                    <label for="settings-cd-visibility">Include this course in the public course index</label> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Format:</td>
+                                <td>
+                                    <select id="settings-format">
+                                        <option selected value="ONCAMPUS">On-Campus</option>
+                                        <option value="OFFCAMPUS">Off-Campus</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mastery Paths:</td>
+                                <td>
+                                    <input type="checkbox" value="PATHS" name="settings-cd-paths" id="settings-paths"/> 
+                                    <label for="settings-cd-paths">Enable individual learning paths for students based on assessment</label> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">Description:</td>
+                                <td>
+                                    <textarea rows="5" cols="60"></textarea>
+                                    <button>more options</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <br/>
+
+                    <button>Update Course Details</button>
+                    <br/>
+                    <br/>
+                
+                </td>
+
+    
+                    
+
+            </tr>
+        <table/>
+    </body>
+</html>

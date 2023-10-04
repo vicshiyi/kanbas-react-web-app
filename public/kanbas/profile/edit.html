@@ -2,89 +2,144 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Home</title>
+        <title>Canvas Home</title>
+        <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="/kanbas/navigation.css" rel="stylesheet"/>
     </head>
-
-    
     <body>
-        <table>
-            <tr>
-                <td valign="top">
-                    <ul>
-                        <li><a href="/kanbas/profile/index.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="/kanbas/home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href="#">Notification</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <h2>Jose Annunziato</h2>
-                    <label for="account-profile-name">Name:*</label>
-                    <input type="text" name="account-profile-name" value="Jose Annunziato" id="profile-name"/>
-                    <label for="account-profile-pronouns">Pronouns:</label>
-                    <select id="profile-pronouns">
-                        <option selected value="NONE">None</option>
-                        <option value="SHE">She/Her/Her</option>
-                        <option value="HE">He/His/Him</option>
-                        <option value="OTHER">Other</option>
-                    </select>
+    
+        <div class="wd-flex-row-container">
+            <div class="kanbas-navigation bg-color-black d-none d-sm-block d-sm-none d-md-block wd-width-85px">
+                <li><a href="#"></a>
+                    <img src="/images/neu_icon.png" height="55"/></li>
+                <li class="nav-active"><a href="/kanbas/profile/index.html">
+                    <i class="fas fa-user-circle fa-3x" style="color: #c0c1c4;"></i><br/>
+                    Account</a></li>
+                <li><a href="/kanbas/dashboard/index.html">
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Dashboard</a></li>
+                <li><a href="/kanbas/home.html">
+                    <i class="fas fa-book fa-2x" style="color: #c71728;"></i><br/>
+                    Courses</a></li>
+                <li><a href="#">
+                    <i class="far fa-calendar-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Calendar</a></li>
+                <li><a href="#">
+                    <i class="fas fa-envelope-open-text fa-2x" style="color: #c71728;"></i><br/>
+                    Inbox</a></li>
+                <li><a href="#">
+                    <i class="far fa-clock fa-2x" style="color: #c71728;"></i><br/>
+                    History</a></li>
+                <li><a href="#">
+                    <i class="fas fa-sitemap fa-2x" style="color: #c71728;"></i><br/>
+                    Studio</a></li>
+                <li><a href="#">
+                    <i class="fas fa-sign-out-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Commons</a></li>
+                <li><a href="#">
+                    <i class="far fa-question-circle fa-2x" style="color: #c71728;"></i><br/>
+                    Help</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            </div>
+            <div class="d-none d-sm-block d-sm-none d-md-block nav-width-300px">
+                <ul class="kanbas-course-nav d-none d-sm-block d-sm-none d-md-block">
+                    <li><a href="#">Notification</a></li>
+                    <li class="active"><a href="/kanbas/profile/index.html">Profile</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">ePortfolios</a></li>
+                    <li><a href="#">Shared Content</a></li>
+                    <li><a href="#">The Hub</a></li>
+                    <li><a href="#">Qwickly Course Tools</a></li>
+                    <li><a href="#">Global Announcements</a></li>
+          
+                </ul>
+            </div>
+            <div class="wd-flex-grow-1 basic-margin-padding">
+                Jose Annunziato's profile
+                    <hr>
                     <br/>
-                    <label for="account-profile-title">Title:</label>
-                    <input type="text" name="account-profile-title" id="profile-title"/>
-                    
 
+                    <div class="row justify-content-end">
+                        <div class="col-auto me-2">
+                            <form action="/kanbas/profile/edit.html">
+                                <button type="button" class="btn bg-color-grey btn-lxx"><i class="fas fa-pencil-alt" style="color: #575757;"></i><a href="/kanbas/profile/index.html" style="color: #878787;">  Cancel Editing</a></button>
+                            </form>
+                        </div> 
+                    </div> 
+
+                    <div style="display: flex; align-items: center;">
+                        <img src="/images/profile.png" height="160"/>
+                    </div><br/>
+
+
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Name:*</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" value="Jose Annunziato">
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="profile-pronouns" class="col-sm-2 col-form-label">Pronouns:</label>
+                        <select class="form-select" id="profile-pronouns">
+                            <option selected value="NONE">None</option>
+                            <option value="SHE">She/Her/Her</option>
+                            <option value="HE">He/His/Him</option>
+                            <option value="OTHER">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+
+                    <br/>
                     <h3>Contact</h3>
-                    No registered services, you can add some on the <a href="#">settings</a> page.
-                    
-                    <h3>Contact</h3>
-                    No registered services, you can add some on the <a href="#">settings</a> page.
-                    
+                    No registered services, you can add some on the <a href="#" class="red-name">settings</a> page.<br/><br/>
+    
                     <h3>Biography</h3>
-                    Faculty, Software Engineer, AI, Space, and renewables enthusiast.<br/>
                     <textarea rows="5" cols="60">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
-                    
+                    <br/>
                     <h3>Links</h3>
-                    <ul>
-                        <li><a href="https://www.youtube.com/">YouTube </a><a href="#"> Links to an external site.</a></li>
-                    </ul>
 
-                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL
-                    </h3>
+                    </h5>
                     <input type="text" name="profile-link-title" value="YouTube"/> &rarr; 
                     <input type="text" name="profile-link-url" value="https://www.youtube.com/"/>
-                    <a href="#">Remove</a><br/>
-                    <button>Add another link</button><br/>
-                    <form action="/kanbas/profile/index.html">
-                        <button>Cancel</button>
-                        <button>Save Profile</button><br/>
-                    </form>
-                
-                    <button>Edit Profile</button>
-                    <button>Cancel Editing</button><br/>
-                    
+                    <button type="button" class="btn bg-color-grey btn-md"><a href="/kanbas/profile/index.html" style="color: #878787;"> Add Another Link</a></button>
 
-                </td>
-            </tr>
-        </table>
+                    <hr/>
+                    <div class="wd-flex-grow-1 basic-margin-padding">
+                        <div class="row justify-content-end">
+                            <div class="col-auto me-2">
+                                <button type="button" class="btn bg-color-grey btn-md"><a href="/kanbas/profile/index.html" style="color: #878787;"> Cancel</a></button>
+                                <button type="button" class="btn btn-danger btn-md"><a href="/kanbas/profile/index.html" style="color: white;"> Save</a></button>
+                            </div>   
+                        </div>
+                    </div>
+            
+            </div>
+        </div>
     </body>
 </html>
