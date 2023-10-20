@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas Home</title>
+        <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="/kanbas/navigation.css" rel="stylesheet"/>
+    </head>
+    <body>
+    
+        <div class="wd-flex-row-container">
+            <div class="kanbas-navigation bg-color-black d-none d-sm-block d-sm-none d-md-block wd-width-85px">
+                <li><a href="#"></a>
+                    <img src="/images/neu_icon.png" height="55"/></li>
+                <li><a href="/kanbas/profile/index.html">
+                    <i class="fas fa-user-circle fa-3x" style="color: #c0c1c4;"></i><br/>
+                    Account</a></li>
+                <li><a href="/kanbas/dashboard/index.html">
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Dashboard</a></li>
+                <li class="nav-active"><a href="/kanbas/home.html">
+                    <i class="fas fa-book fa-2x" style="color: #c71728;"></i><br/>
+                    Courses</a></li>
+                <li><a href="#">
+                    <i class="far fa-calendar-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Calendar</a></li>
+                <li><a href="#">
+                    <i class="fas fa-envelope-open-text fa-2x" style="color: #c71728;"></i><br/>
+                    Inbox</a></li>
+                <li><a href="#">
+                    <i class="far fa-clock fa-2x" style="color: #c71728;"></i><br/>
+                    History</a></li>
+                <li><a href="#">
+                    <i class="fas fa-sitemap fa-2x" style="color: #c71728;"></i><br/>
+                    Studio</a></li>
+                <li><a href="#">
+                    <i class="fas fa-sign-out-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Commons</a></li>
+                <li><a href="#">
+                    <i class="far fa-question-circle fa-2x" style="color: #c71728;"></i><br/>
+                    Help</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            </div>
+            <div class="d-none d-sm-block d-sm-none d-md-block nav-width-300px">
+                <ul class="kanbas-course-nav d-none d-sm-block d-sm-none d-md-block">
+                    <li ><a href="/kanbas/home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/kanbas/grade/index.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li class="active"><a href="/kanbas/settings/index.html">Settings</a></li>
+                </ul>
+            </div>
+            <div class="wd-flex-grow-1 basic-margin-padding">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/kanbas/settings/index.html">Course Details</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link red-name" href="#">Sections</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link red-name" href="/kanbas/settings/navigation.html">Navigation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link red-name">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link red-name">Feature Options</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link red-name">Integrations</a>
+                    </li>
+                </ul>
+
+                <h2>Course Details</h2>
+
+                <div class="row mb-3">
+                    <label for="settings-cd-image" class="col-sm-2 col-form-label">Image:</label>
+                    <div class="col-sm-10">
+                        <input type="file" id="settings-image" name="settings-cd-image" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Name:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="points" value="CS5610 11550 Web Development SEC 01 Fall 2023 [VTL-2-OL]">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Course Code:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="points" value="CS5610.11550.202410">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Blueprint Course:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="points" value="No">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Blueprint Course:</label>
+                    <div class="col-sm-10 ">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1" >
+                            Enable course as a Course Template
+                        </label>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="assignmentGroup" class="col-sm-2 col-form-label">Time Zone:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" id="assignmentGroup">
+                        <option selected value="EASTERN">Eastern Time(US & Canada)(-05:00/-04:00)</option>
+                        <option value="EASTERN">Pacific Time(US & Canada)(-02:00/-01:00)</option>
+                        <option value="EASTERN">Greenwich Time(UK)(0:00)</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">SIS ID:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="points" value="CS5610.11550.202410">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">SIS ID:</label>
+                    <div class="col-sm-10">
+                      <a href="#" class="red-name">CS Undergrad</a>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Term:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="points" value="202410_1 Fall 2023 Semester Full Term">
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="assignmentGroup" class="col-sm-2 col-form-label">Paticipation:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" id="assignmentGroup">
+                        <option selected value="TERM">Term</option>
+                        <option value="NONE">None</option>
+                        <option value="WEEK">Week</option>
+                      </select>
+                      <br/>
+                      Course Paticipation is limited to <b>term</b> start and end dates.
+                      <br/><br/>
+
+                      <label for="settings-cd-start"><h5>Start</h5></label><br/>
+                      <input type="date" id="settings-start" value="2023-01-01"/>
+                      <br/><br/>
+
+                      <label for="settings-cd-start"><h5>End</h5></label><br/>
+                      <input type="date" id="settings-start" value="2023-01-01"/>
+                      <br/><br/>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1" disable>
+                            Restrict students from viewing course before term start date
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1" disable>
+                            Restrict students from viewing course after term start date
+                        </label>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="assignmentGroup" class="col-sm-2 col-form-label">Default due time:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" id="assignmentGroup">
+                        <option selected value="DEFAULTPM">Account default (11:59pm)</option>
+                        <option value="DEFAULTAM">Account default (9:00am)</option>
+                      </select>
+                      This influences the user interface for setting due dates. It dose not change the time due for any existing assignments.
+                                
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="assignmentGroup" class="col-sm-2 col-form-label">Language:</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="settings-language">
+                            <option selected value="EN">Not set(user-configurable, defaults to English (United State))</option>
+                            <option value="CHN">Chinese</option>
+                            <option value="SPA">Spanish</option>
+                        </select>
+                      This will override any user/system language preferences. This is only recommended for foreign language courses.
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">File Storage:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="points" value="10000 megabytes">
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Large Course:</label>
+                    <div class="col-sm-10 ">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1" >
+                            Launch SpeedGrader Filtered by Student Group
+                        </label>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Grading Scheme:</label>
+                    <div class="col-sm-10 ">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1" >
+                            Enable course grading scheme
+                        </label>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="assignmentGroup" class="col-sm-2 col-form-label">License:</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="settings-language">
+                            <option selected value="PRIVATE">Private(Copyrighted)</option>
+                            <option value="PUBLIC">Public</option>
+                        </select>
+                        <i class="far fa-question-circle" style="color: #d63838;"></i>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">File Copy Right:</label>
+                    <div class="col-sm-10 ">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1" >
+                            Copyright and license information must be provided for files before they are published
+                        </label>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="assignmentGroup" class="col-sm-2 col-form-label">Visibility:</label>
+                    <div class="col-sm-10">
+                        If you need to make your course public please contact your ad ministrator/support.<br/> 
+                        <select class="form-select" id="settings-language">
+                            <option selected value="COURSE">Course</option>
+                            <option value="OTHER">Other</option>
+                        </select> 
+                        <i class="far fa-question-circle" style="color: #d63838;"></i>
+
+                        <input type="checkbox" value="VISIBILITY" name="settings-cd-visibility" id="settings-visibility"/>
+                        <label for="settings-cd-visibility">Include this course in the public course index</label> 
+                    </div>
+                </div>
+                
+
+                <div class="row mb-3">
+                    <label for="assignmentGroup" class="col-sm-2 col-form-label">Format:</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="settings-language">
+                            <option selected value="ONCAMPUS">On-Campus</option>
+                            <option value="OFFCAMPUS">Off-Campus</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Mastery Paths:</label>
+                    <div class="col-sm-10 ">
+                      <div class="form-check">
+                        <input type="checkbox" value="PATHS" name="settings-cd-paths" id="settings-paths"/> 
+                        <label for="settings-cd-paths">Enable individual learning paths for students based on assessment</label> 
+                        </label>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="points" class="col-sm-2 col-form-label">Description:</label>
+                    <div class="col-sm-10 ">
+                        <textarea rows="5" cols="60"></textarea>
+                        <a href="#" class="red-name">more options</a>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="wd-flex-grow-1 basic-margin-padding">
+                    <div class="row justify-content-end">
+                        <div class="col-auto me-2">
+                            <button type="button" class="btn btn-danger btn-md">Update Course Details</button>
+                        </div>   
+                    </div>
+                </div>
+            
+
+                
+            </div>
+            <div class="nav-width-300px d-none d-xl-block statu ">
+                <td valign="top">
+                    <p>Course Status<p>
+                    <hr/>
+
+                    <div class="btn-group statu-align" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn bg-color-grey">Unpublish</button>
+                        <button type="button" class="btn btn-success">Published</button>
+                    </div>
+                    <br/>
+                    <br/>
+
+
+                    <div class="d-grid gap-1">
+                        <button class="btn bg-color-grey " type="button">Import Existing Content</button>
+                        <button class="btn bg-color-grey" type="button">Impoet From Commons</button>
+                        <button class="btn bg-color-grey" type="button">Choose Home Page</button>
+                        <button class="btn bg-color-grey" type="button">View Course Stream</button>
+                        <button class="btn bg-color-grey" type="button">New Announcement</button>
+                        <button class="btn bg-color-grey" type="button">New Analytics</button>
+                        <button class="btn bg-color-grey" type="button">View Course Notifications</button>
+                    </div><br/><br/>
+
+                    <p>Comming Up<p>
+                    <hr/>
+                    View Calendar
+                    <div class="row mb-3">
+                        <label for="settings-cd-image" class="col-sm-2 col-form-label"><i class="far fa-calendar-alt" style="color: #808080;"></i></label>
+                        <div class="col-sm-10">
+                            <a href="https://northeastern.zoom.us/j/98697073658#success" class="red-name">Lecture</a><p>CS4550.12631.202410 Sep 7 at 11:45am</p></a>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="settings-cd-image" class="col-sm-2 col-form-label"><i class="far fa-calendar-alt" style="color: #808080;"></i></label>
+                        <div class="col-sm-10">
+                            <a href="https://northeastern.zoom.us/j/92367464797?pwd=eWp4ZStUOFJmTi9ZSk5iSTVTNWZ2QT09#success" class="red-name">CS5610 06 SP23 Lecture</a><p>CS4550.12631.202410 Sep 11 at 11:45am</p></a>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="settings-cd-image" class="col-sm-2 col-form-label"><i class="far fa-calendar-alt" style="color: #808080;"></i></label>
+                        <div class="col-sm-10">
+                            <a href="https://northeastern.zoom.us/j/99253030955#success" class="red-name">CS5610 Web Development SUMMER01 Lecture</a><p>CS5620 06 SP23 Lecture Sep 11 at 6am</p></a>
+                        </div>
+                    </div>
+                </td>
+            </div>
+        </div>
+    </body>
+</html>

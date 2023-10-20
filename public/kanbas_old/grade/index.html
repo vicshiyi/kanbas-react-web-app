@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas Home</title>
+        <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="/kanbas/navigation.css" rel="stylesheet"/>
+    </head>
+    <body>
+    
+        <div class="wd-flex-row-container">
+            <div class="kanbas-navigation bg-color-black d-none d-sm-block d-sm-none d-md-block wd-width-85px">
+                <li><a href="#"></a>
+                    <img src="/images/neu_icon.png" height="55"/></li>
+                <li><a href="/kanbas/profile/index.html">
+                    <i class="fas fa-user-circle fa-3x" style="color: #c0c1c4;"></i><br/>
+                    Account</a></li>
+                <li><a href="/kanbas/dashboard/index.html">
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Dashboard</a></li>
+                <li class="nav-active"><a href="/kanbas/home.html">
+                    <i class="fas fa-book fa-2x" style="color: #c71728;"></i><br/>
+                    Courses</a></li>
+                <li><a href="#">
+                    <i class="far fa-calendar-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Calendar</a></li>
+                <li><a href="#">
+                    <i class="fas fa-envelope-open-text fa-2x" style="color: #c71728;"></i><br/>
+                    Inbox</a></li>
+                <li><a href="#">
+                    <i class="far fa-clock fa-2x" style="color: #c71728;"></i><br/>
+                    History</a></li>
+                <li><a href="#">
+                    <i class="fas fa-sitemap fa-2x" style="color: #c71728;"></i><br/>
+                    Studio</a></li>
+                <li><a href="#">
+                    <i class="fas fa-sign-out-alt fa-2x" style="color: #c71728;"></i><br/>
+                    Commons</a></li>
+                <li><a href="#">
+                    <i class="far fa-question-circle fa-2x" style="color: #c71728;"></i><br/>
+                    Help</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            </div>
+            <div class="d-none d-sm-block d-sm-none d-md-block nav-width-300px">
+                <ul class="kanbas-course-nav d-none d-sm-block d-sm-none d-md-block">
+                    <li><a href="/kanbas/home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li class="active"><a href="/kanbas/grade/index.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="/kanbas/settings/index.html">Settings</a></li>
+                </ul>
+            </div>
+            <div class="wd-flex-grow-1 basic-margin-padding nav-flex-left-margin-200px">
+
+                
+                <div class="row justify-content-end">
+                    <div class="col-auto me-2">
+                        <button type="button" class="btn bg-color-grey btn-md"><i class="fas fa-file-import fa-sm" style="color: #787878;"></i>  Import</button>
+
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn bg-color-grey btn-md dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-file-export fa-sm" style="color: #787878;"></i>  Export
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/kanbas/home.html">Save</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn bg-color-grey btn-md"><i class="fas fa-cog fa-sm" style="color: #787878;"></i></button>
+                    </div>   
+                </div>
+
+
+                <div class="wd-grid-row">
+                    <div class="wd-grid-col-half-page">
+                        <h5>Student Names</h5>
+                    </div>
+                    <div class="wd-grid-col-half-page">
+                        <h5>Assignment Names</h5>
+                    </div>
+                </div>
+
+                <div class="wd-grid-row">
+                    <div class="wd-grid-col-half-page ">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-search" style="color: #949494;"></i></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Search Students</option>
+                              <option value="1">One</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="wd-grid-col-half-page">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-search" style="color: #949494;"></i></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Search Assignments</option>
+                              <option value="1">One</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn bg-color-grey btn-md"><i class="fas fa-filter fa-sm" style="color: #787878;"></i>  Apply Filters</button>
+                <p></p>
+
+                <div class="table-responsive col-11">
+                    <table class="table table-bordered table-striped table-hover col-11" border="1" width="80%">
+                        <thead>
+                            <tr>
+                                <td>Student Name</td>
+                                <td>A1 SETUP</td>
+                                <td>A2 HTML</td>
+                                <td>A3 CSS</td>
+                                <td>A4 BOOTSTRAP</td>
+                                <td>A5 JAVASCRIPT</td>
+                                <td>A6 REACT</td>
+                                <td>A7 REDUX</td>
+                                <td>A8 NODE</td>
+                                <td>A9 MONGO</td>
+                                <td>A10 None</td>
+                                <td>A11 Final</td>
+                       
+    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >Amy Allen</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                           
+                            </tr>
+                            <tr>
+                                <td>Bella Best</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Chole Call</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>David Dean</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Ella East</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Frank Fast</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Gloria Ghost</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Harry Host</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Ivy Lee</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Jacky Jay</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Kitty Kit</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Laura Lall</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Mary More</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Nola None</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Oscer Ops</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Peter Pie</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Queen Qize</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Rachel Real</td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+                                <td><input type="text" class="form-control" id="inputCity" value="100"></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div> 
+
+                
+            </div>
+            
+        </div>
+    </body>
+</html>
