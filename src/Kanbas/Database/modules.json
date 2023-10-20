@@ -6,15 +6,15 @@
     "course": "RS101",
     "lessons": [
       {
-        "name": "Introduction to Rocket Propulsion I",
+        "name": "1. Introduction to Rocket Propulsion I",
         "description": "Rocket propulsion is the science of accelerating matter to very high speeds using rockets. The matter, called propellant, is stored in a tank and ejected at high speed through a nozzle. The propellant is ejected at high speed in the opposite direction of the desired rocket motion, as described by Newton's third law of motion."
       },
       {
-        "name": "Introduction to Rocket Propulsion II",
+        "name": "2. Introduction to Rocket Propulsion II",
         "description": "Rocket propulsion is used in a wide variety of applications, including spaceflight, military missiles, and scientific research. The most common type of rocket propulsion system is the chemical rocket, which stores propellant in a tank and ejects it through a nozzle. Other types of rocket propulsion systems include electric propulsion, nuclear propulsion, and cold gas thrusters."
       },
       {
-        "name": "Introduction to Rocket Propulsion III",
+        "name": "3. Introduction to Rocket Propulsion III",
         "description": "The most common type of rocket propulsion system is the chemical rocket, which stores propellant in a tank and ejects it through a nozzle. Other types of rocket propulsion systems include electric propulsion, nuclear propulsion, and cold gas thrusters."
       }       
     ]
