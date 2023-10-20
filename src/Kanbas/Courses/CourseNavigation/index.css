@@ -1,0 +1,291 @@
+.wd-kanbas-navigation .wd-icon {
+    font-size: 2em;
+    color: #c71728;
+}
+
+.wd-kanbas-navigation .wd-icon-2 {
+    font-size: 2.7em;
+    color: #c71728;
+}
+
+.wd-kanbas-navigation .wd-icon-3 {
+    font-size: 3em;
+    color: #c71728;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-color-black {
+    background-color: black;
+}
+
+.bg-color-grey {
+    background-color: #f5f5f5;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
+.nav-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-flex-column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-flex-glow-1 {
+    flex-grow: 1;
+}
+
+.nav-width-285px {
+    width: 285px;
+}
+
+.nav-width-300px {
+    width: 300px;
+}
+
+.nav-flex-fix {
+    position: fixed;
+}
+
+
+.nav-flex-left-margin-80px{
+    margin-left: 80px;
+}
+
+.nav-flex-left-margin-100px{
+    margin-left: 100px;
+}
+
+.nav-flex-left-margin-200px{
+    margin-left: 200px;
+}
+
+.nav-flex-left-margin-300px{
+    margin-left: 300px;
+}
+  
+.kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    width: 85px;
+    position: fixed;
+
+}
+
+.wd-kanbas-navigation a {
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+    padding: 10px 5px;
+    width: 85px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.wd-kanbas-navigation a.active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation a.active {
+    color: red;
+}
+
+.wd-kanbas-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.kanbas-navigation a i {
+    margin-bottom: 5px;
+}
+
+.kanbas-course-nav {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 80px;
+    margin-left: 18px;
+    /* position: fixed; */
+    border: none;
+}
+
+.kanbas-course-nav a {
+    padding-left: 10px;
+    border: none;
+}
+
+.kanbas-course-nav a.active {
+    background-color: white;
+    color: #c71728;
+    border-left: 2px solid black;
+    padding-left: 15px;
+}
+
+.kanbas-course-nav a.active {
+    color: black;
+}
+
+.kanbas-course-nav a {
+    color: #c71728;
+    text-decoration: none;
+}
+
+.kanbas-course-nav-profile {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 120px;
+    margin-left: 110px;
+}
+
+.kanbas-course-nav-profile li {
+    padding-left: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.kanbas-course-nav-profile li.active {
+    color: #c71728;
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+.kanbas-course-nav-profile li.active a {
+    color: black;
+}
+
+.kanbas-course-nav-profile a {
+    color: #c71728;
+    text-decoration: none;
+}
+
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
+
+.wd-width-85px {
+    width: 85px;
+}
+
+.setting-main {
+    padding-left: 20px;
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+.dashboard > .published-course{
+    margin: 20px;
+}
+
+.img-card {
+    height: 150px; 
+    object-fit: cover;
+}
+ 
+.custom-card-title {
+    font-size: 14px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 100%; 
+}
+
+.custom-card-text-1 {
+    max-height: 2.6em;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    margin-bottom: 0px; 
+    color: #878787;
+}
+
+.custom-card-text-2 {
+    max-height: 2.6em;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    margin-bottom: 10px; 
+    color: #878787;
+    font-size: 13px;
+}
+  
+.card-icons {
+    text-align:start; 
+}
+
+.card-icons i {
+font-size: 18px; 
+margin: 0 16px; 
+}
+
+.custom-select {
+    width: 110px;
+}
+
+.statu {
+    padding: 20px;
+}
+
+.statu-align {
+    align-items: center;
+}
+
+.basic-margin-padding {
+    padding: 20px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+ 
+.wd-grid-col-half-page-70 {
+    width: 60%;
+    float: left;
+}
+
+.wd-grid-col-half-page-30 {
+    width: 40%;
+    float: right;
+}
+
+.wd-grid-col-half-page {
+    width: 50%;
+    float: left;
+}
+
+.red-name {
+    color: #c71728;
+}
+
+.wd-rounded-corners-all-around {
+    border: 1px;
+    border-radius: 20px;
+}
+
+.h3 a{
+    color: #c71728;
+}
