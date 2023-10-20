@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import React from "react";
 import db from "../Database";
@@ -7,15 +7,21 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import {AiOutlineMenu} from "react-icons/ai";
+import "./index.css";
 // import JsonPre from "../../Labs/a3/JsonPre";
 
 function Courses() {
     const {courseId} = useParams();
+    const {pathname} = useLocation();
+    const [empty, kanbas, courses, id, screen] = pathname.split("/");
     const course = db.courses.find((course) => course._id === courseId);
     return (
         <div>
-            <h1>Courses {course.name}</h1>
-            <CourseNavigation />
+            
+          <h3 className="text-red"><AiOutlineMenu className="course-icon"/> Courses {course.name} / {screen}</h3>
+           
+          <CourseNavigation />
       <div>
         <div
           className="overflow-y-scroll position-fixed bottom-0 end-0"
@@ -23,7 +29,7 @@ function Courses() {
             left: "320px",
             top: "50px",
           }}
-        >
+        ><hr/>
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />

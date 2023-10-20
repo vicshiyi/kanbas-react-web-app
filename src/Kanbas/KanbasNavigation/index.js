@@ -26,7 +26,7 @@ function KanbasNavigation() {
   }
   const { pathname } = useLocation();
   return (
-    <div className="list-group wd-kanbas-navigation" style={{ width: 85 }}>
+    <div className="list-group wd-kanbas-navigation d-none d-sm-block d-sm-none d-md-block" style={{ width: 85 }}>
         <img src="../../images/neu_icon.png" height="85" width="85" />
         {links.map((link, index) => (
             <Link
