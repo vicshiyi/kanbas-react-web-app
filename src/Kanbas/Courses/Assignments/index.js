@@ -10,7 +10,23 @@ function Assignments() {
     (assignment) => assignment.course === courseId);
   return (
     <div>
-      <h2>Assignments for course {courseId}</h2>
+
+
+      <div class="row justify-content-end">
+            <div class="col-6"> 
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search for Assignment" aria-label="Username" aria-describedby="basic-addon1" />
+                </div>
+            </div>
+            <div class="col-6"> 
+                <button type="button" class="btn bg-color-grey btn-md">Group</button>
+                <button type="button" class="btn btn-danger btn-md">Assignment</button>
+                <button type="button" class="btn bg-color-grey btn-md"></button>
+            </div>
+        </div>
+        <hr/>
+
+      <h5>Assignments for course {courseId}</h5>
       <div className="list-group">
         {courseAssignments.map((assignment) => (
           <Link

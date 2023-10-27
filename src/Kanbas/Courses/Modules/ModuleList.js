@@ -12,16 +12,16 @@ function ModuleList() {
     <div class="row justify-content-end">
       <div class="col-auto me-2">
         
-          <button type="button" class="btn bg-color-grey btn-sm buttom-align" aria-expanded="false">
+          <button type="button" class="btn wb-bg-color-grey btn-sm buttom-align" aria-expanded="false">
             Collapse All
           </button>
 
-          <button type="button" class="btn bg-color-grey btn-sm buttom-align" aria-expanded="false">
+          <button type="button" class="btn wb-bg-color-grey btn-sm buttom-align" aria-expanded="false">
             View Progross
           </button>
             
           <div class="btn-group buttom-align" role="group">
-              <button type="button" class="btn bg-color-grey btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn wb-bg-color-grey btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   Publish All
               </button>
               <ul class="dropdown-menu">
@@ -30,7 +30,7 @@ function ModuleList() {
           </div>
 
           <button type="button" class="btn btn-danger btn-sm buttom-align">+ Module</button>
-          <button type="button" class="btn bg-color-grey btn-sm buttom-align"><BsThreeDotsVertical /></button>
+          <button type="button" class="btn wb-bg-color-grey btn-sm buttom-align"><BsThreeDotsVertical /></button>
       </div>  
   
          
@@ -63,6 +63,7 @@ function ModuleList() {
     </ul>
     </div> 
     </div> 
+
   )
 }
 export default ModuleList;

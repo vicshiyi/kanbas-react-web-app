@@ -8,20 +8,20 @@ function Status() {
                     <hr/>
 
                     <div class="btn-group statu-align" role="group" aria-label="Basic mixed styles example">
-                        <button type="button" class="btn bg-color-grey">Unpublish</button>
+                        <button type="button" class="btn wb-bg-color-grey">Unpublish</button>
                         <button type="button" class="btn btn-success">Published</button>
                     </div>
                     <br/>
                     <br/>
 
             <div class="d-grid gap-1">
-                <button class="btn bg-color-grey" type="button">Import Existing Content</button>
-                <button class="btn bg-color-grey" type="button">Impoet From Commons</button>
-                <button class="btn bg-color-grey" type="button">Choose Home Page</button>
-                <button class="btn bg-color-grey" type="button">View Course Stream</button>
-                <button class="btn bg-color-grey" type="button">New Announcement</button>
-                <button class="btn bg-color-grey" type="button">New Analytics</button>
-                <button class="btn bg-color-grey" type="button">View Course Notifications</button>
+                <button class="btn wb-bg-color-grey" type="button">Import Existing Content</button>
+                <button class="btn wb-bg-color-grey" type="button">Impoet From Commons</button>
+                <button class="btn wb-bg-color-grey" type="button">Choose Home Page</button>
+                <button class="btn wb-bg-color-grey" type="button">View Course Stream</button>
+                <button class="btn wb-bg-color-grey" type="button">New Announcement</button>
+                <button class="btn wb-bg-color-grey" type="button">New Analytics</button>
+                <button class="btn wb-bg-color-grey" type="button">View Course Notifications</button>
             </div><br/><br/>
 
 
