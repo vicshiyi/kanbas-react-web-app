@@ -5,6 +5,7 @@ import HelloWorld from "./Labs/a3/HelloWorld";
 import Kanbas from "./Kanbas";
 import {HashRouter} from "react-router-dom";
 import {Routes, Route, Navigate} from "react-router";
+import StateManagement from './Lecture/StateManagement';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/hello"    element={<HelloWorld/>}/>
           <Route path="/Labs/*"   element={<Labs/>}/>
           <Route path="/Kanbas/*" element={<Kanbas/>}/>
+          <Route path="/Lectures/*" element={<StateManagement/>} />
         </Routes>
       </div>
     </HashRouter>
