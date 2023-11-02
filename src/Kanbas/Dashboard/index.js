@@ -1,69 +1,88 @@
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
-import "./index.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 function Dashboard() {
-    const courses = db.courses;
-    return (
-        // <div>
-        // <h1>Dashboard</h1>
-        // <hr/>
-        // <h2>Published Courses ({courses.length})</h2>
-        // <div className="list-group">
-        //     {courses.map((course, index) => (
-        //     <Link 
-        //         key={course._id} 
-        //         to={`/Kanbas/Courses/${course._id}`} 
-        //         className="list-group-item"
-        //     >
-        //         {course.name}
-        //     </Link>
-        //     ))}
-        // </div>
-        // </div>
+  const [courses, setCourses] = useState(db.courses);
+  const [course, setCourse] = useState({
+    name: "New Course",      number: "New Number",
+    startDate: "2023-09-10", endDate: "2023-12-15",
+    });
+  const addNewCourse = () => {
+    setCourses([...courses,
+              { ...course,
+                _id: new Date().getTime() }]);
+  };
+  const deleteCourse = (courseId) => {
+    setCourses(courses.filter((course) => course._id !== courseId));
+  };
+  const updateCourse = () => {
+    setCourses(
+      courses.map((c) => {
+        if (c._id === course._id) {
+          return course;
+        } else {
+          return c;
+        }
+      })
+    );
+  };
 
 
+
+  return (
     <div class="wd-flex-grow-1 dashboard ">
-        <h1>Dashboard</h1>
+      <h1>Dashboard</h1>
         <hr/>
         <div class="published-course">
             <h2>Published Courses ({courses.length})</h2>
             <hr/>
+      <input value={course.name} className="form-control"
+             onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
+      <input value={course.number} className="form-control"
+             onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
+      <input value={course.startDate} className="form-control" type="date"
+             onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
+      <input value={course.endDate} className="form-control" type="date"
+             onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 d-flex flex-row flex-wrap">
-            <div class="col">
-                <div class="card">
-                    {courses.map((course, index) => (
-                        <div class="card">
-                        <img src="/images/blue.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h6 class="card-title">{course.name}</h6>
 
-                            <Link
-                            key={course._id}
-                            to={`/Kanbas/Courses/${course._id}`}
-                            className="btn btn-primary"
-                            >
-                            {course.name}
-                            </Link>
-                            <p class="card-text custom-card-text-2">
-                            This is a longer card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                            </p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
+      <button className="btn btn-success float-end" onClick={addNewCourse} >
+        Add
+      </button>
+      <button className="btn btn-primary float-end" onClick={updateCourse} >
+        Update
+      </button>
+      <br/><br/>
+
+
+      <div className="list-group">
+        {courses.map((course) => (
+          <Link key={course._id}
+                to={`/Kanbas/Courses/${course._id}`}
+                className="list-group-item">
+
+            <button className="btn btn-warning float-end" onClick={(event) => {
+                event.preventDefault();
+                setCourse(course);
+              }}>
+              Edit
+            </button>
+
+
+            <button className="btn btn-danger float-end" onClick={(event) => {
+                event.preventDefault();
+                deleteCourse(course._id);
+            }}>
+            Delete
+            </button>
+
+            {course.name}
+          </Link>
+        ))}
+      </div>
     </div>
     </div>
-    </div>
-
-
-
-
   );
 }
+
 export default Dashboard;
