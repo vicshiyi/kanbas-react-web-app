@@ -11,15 +11,15 @@ import {AiOutlineMenu} from "react-icons/ai";
 import "./index.css";
 // import JsonPre from "../../Labs/a3/JsonPre";
 
-function Courses() {
+function Courses({ courses }) {
     const {courseId} = useParams();
-    const {pathname} = useLocation();
-    const [empty, kanbas, courses, id, screen] = pathname.split("/");
-    const course = db.courses.find((course) => course._id === courseId);
+    // const {pathname} = useLocation();
+    // const [empty, kanbas, courses, id, screen] = pathname.split("/");
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div>
             
-          <h3 className="text-red"><AiOutlineMenu className="course-icon"/> Courses {course.name} / {screen}</h3>
+          <h3 className="text-red"><AiOutlineMenu className="course-icon"/> Courses: {course.name} / </h3>
            
           <CourseNavigation />
       <div>

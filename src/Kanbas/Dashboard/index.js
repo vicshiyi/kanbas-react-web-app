@@ -1,7 +1,10 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
-function Dashboard() {
+
+function Dashboard(
+
+  ) {
   const [courses, setCourses] = useState(db.courses);
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
