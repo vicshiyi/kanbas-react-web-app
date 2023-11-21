@@ -1,10 +1,9 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
+import axios from "axios";
 
-function Dashboard(
-
-  ) {
+function Dashboard() {
   const [courses, setCourses] = useState(db.courses);
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
@@ -29,8 +28,8 @@ function Dashboard(
       })
     );
   };
-
-
+  const response = axios.get("http://localhost:4000/#/api/courses");
+  console.log(response);
 
   return (
     <div class="wd-flex-grow-1 dashboard ">
@@ -49,10 +48,10 @@ function Dashboard(
              onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
 
 
-      <button className="btn btn-success float-end" onClick={addNewCourse} >
+      <button className="btn btn-success mb-2 float-end" onClick={addNewCourse} >
         Add
       </button>
-      <button className="btn btn-primary float-end" onClick={updateCourse} >
+      <button className="btn btn-primary mb-2 float-end" onClick={updateCourse} >
         Update
       </button>
       <br/><br/>
@@ -64,7 +63,7 @@ function Dashboard(
                 to={`/Kanbas/Courses/${course._id}`}
                 className="list-group-item">
 
-            <button className="btn btn-warning float-end" onClick={(event) => {
+            <button className="btn btn-warning mb-2 float-end" onClick={(event) => {
                 event.preventDefault();
                 setCourse(course);
               }}>
@@ -72,7 +71,7 @@ function Dashboard(
             </button>
 
 
-            <button className="btn btn-danger float-end" onClick={(event) => {
+            <button className="btn btn-danger mb-2 float-end" onClick={(event) => {
                 event.preventDefault();
                 deleteCourse(course._id);
             }}>
