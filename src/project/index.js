@@ -48,7 +48,7 @@ function Project() {
               <Link to="/project/account" className="list-group-item">
                 Account
               </Link>
-              <Link to="/admin/users" className="list-group-item">
+              <Link to="/project/table" className="list-group-item">
                 User table
               </Link>
           </div>
@@ -64,7 +64,8 @@ function Project() {
             <Route path="/users" element={<UserList />} />
             <Route path="/users/:id" element={<UserDetails />} />
             <Route path="/account" element={<Account />} />
-            <Route path="/admin/users" element={<UserTable />} />
+            <Route path="/table" element={<UserTable />} />
+            <Route path="/account/:id" element={<Account />} />
             {/* <Route path="/details" element={<Details />} /> */}
           </Routes>
         </div>
